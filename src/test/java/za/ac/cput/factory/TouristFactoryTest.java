@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import za.ac.cput.domain.Tourist;
+import za.ac.cput.factory.TouristFactory;
 
 import static org.junit.Assert.*;
 
@@ -21,14 +22,16 @@ public class TouristFactoryTest {
     @Test
     public void getTourist() {
 
-        String name = "Carly-Ann";
-        String sName = "Abrahams";
+
+
+        String tourName = "Carly-Ann";
+        String tourSurname ="Ahbramh";
         int age = 25;
-        Tourist tor = TouristFactory.getTourist(name, sName, age);
+        Tourist tor = TouristFactory.getTourist(tourName, tourSurname, age);
 
 
         System.out.println(tor);
-        Assert.assertNotNull(tor.getTouristId());
+        Assert.assertNotNull(tor.getAge());
 
     }
 }

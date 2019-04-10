@@ -39,7 +39,7 @@ public class Tourist {
         private String touristId, tourName, tourSurname;
         private int age;
         private Set<Destination> destinations;
-        private Set<Attractions> attractions;
+
 
         public Builder touristId( String studentId) {
             this.touristId = touristId;
@@ -70,7 +70,7 @@ public class Tourist {
     @Override
     public String toString() {
         return "Tourist{" +
-                "touristId='" + touristId + '\'' +
+
                 ", tourName='" + tourName + '\'' +
                 ", tourSurname='" + tourSurname + '\'' +
                 ", age=" + age +
